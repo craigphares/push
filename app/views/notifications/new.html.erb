@@ -1,0 +1,20 @@
+<h1>Push</h1>
+
+<%= form_for @notification do |f|  %>
+  <%= f.label :certificate %>
+  <%= f.text_area :certificate %>
+
+  <%= f.label :passphrase %>
+  <%= f.text_field :passphrase %>
+
+  <%= f.label :gateway %>
+  <%= f.text_field :gateway %>
+
+  <%= f.label :device_token %>
+  <%= f.text_field :device_token %>
+
+  <%= f.label :alert %>
+  <%= f.text_field :alert %>
+
+  <%= f.submit %>
+<% end %>
